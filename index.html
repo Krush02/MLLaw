@@ -13,56 +13,288 @@
   <body>
 
     <!-- Header: nav-menu & banner -->
-    <header>
+    <header id="home">
       <nav>
-        <i class="fa fa-bars fa-2x"></i>
-        <ul class="dropdown-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Areas of Practice</a></li>
-          <li><a href="#">Meet the Team</a></li>
-          <li><a href="#">Contact Us</a></li>
+        <ul class="slide-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#practice-areas">Areas of Practice</a></li>
+          <li><a href="#meet-team">Meet the Team</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
         </ul>
       </nav>
+
       <div class="banner">
         <div class="banner-headline">
           <h1>Marsicano + Leyva</h1>
-          <h5>Your Florida Legal Team</h5>
+          <h5>Our firm is
+            <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "professional.", "dedicated.", "knowledgable.", "experienced.", "creative." ]'></span>
+          </h5>
         </div>
       </div>
     </header>
 
     <!-- About us section -->
-    <div class="about">
-      <div class="container">
+    <div class="container-light flex-container">
+      <div class="about">
         <h3>About Our Law Firm</h3>
         <p>Marsicano + Leyva PLLC is committed to empowering individuals and business owners by offering a suite of professional legal services at an affordable rate. The attorneys at Marsicano + Leyva PLLC will use their individual experiences and unique insights to provide clients with tailored representation and cutting-edge legal solutions.</p>
         <span>Contact us today to discuss how our firm can help empower you.</span>
       </div>
+      <div class="about extras">
+        <div class="blurb" id="globe">
+          <i class="fa fa-globe fa-4x"></i>
+          <p>Knowledge</p>
+        </div>
+        <div class="blurb" id="hourglass">
+          <i class="fa fa-hourglass fa-4x"></i>
+          <p>Experience</p>
+        </div>
+        <div class="blurb" id="gavel">
+          <i class="fa fa-gavel fa-4x"></i>
+          <p>Dedication</p>
+        </div>
+      </div>
     </div>
 
     <!-- Areas of practice section -->
-    <div class="areas">
-      <div class="container">
+    <div id="practice-areas" class="container-dark flex-container">
+      <div class="areas">
+        <h2 class="heading">Areas of Practice</h2>
+        <h3>________________________________________</h2>
         <ul>
-          <li><img src="./resources/images/lady-justice.jpg"></li>
-          <li><img src="./resources/images/handshake.jpeg"></li>
-          <li><img src="./resources/images/handshake.jpeg"></li>
-          <li><img src="./resources/images/handshake.jpeg"></li>
-          <li><img src="./resources/images/handshake.jpeg"></li>
-          <li><img src="./resources/images/handshake.jpeg"></li>
-          <li><img src="./resources/images/handshake.jpeg"></li>
-          <li><img src="./resources/images/handshake.jpeg"></li>
+          <li id="family" class="area">
+            <a href="#modal-one" class="btn btn-family">Family Law</a>
+          </li>
+          <li id="business" class="area">
+            <a href="#modal-two" class="btn btn-business">Business Law</a>
+          </li>
+          <li id="property" class="area">
+            <a href="#modal-three" class="btn btn-real">Real Estate Law</a>
+          </li>
+        </ul>
+        <ul>
+          <li id="commercial" class="area">
+            <a href="#modal-four" class="btn btn-commercial">Commercial Litigation</a>
+          </li>
+          <li id="civil" class="area">
+            <a href="#modal-five" class="btn btn-civil">Civil Litigation</a>
+          </li>
+          <li id="consumer" class="area">
+            <a href="#modal-six" class="btn btn-consumer">Consumer Litigation</a>
+          </li>
+        </ul>
+        <ul>
+          <li id="estate" class="area">
+            <a href="#modal-seven" class="btn btn-estate">Estate Planning</a>
+          </li>
+          <li id="probate" class="area">
+            <a href="#modal-eight" class="btn btn-probate">Probate</a>
+          </li>
+          <li id="employment" class="area">
+            <a href="#modal-nine" class="btn btn-employment">Employment Law</a>
+          </li>
         </ul>
       </div>
 
+      <!-- Modals -->
+      <div class="modal" id="modal-one">
+        <div class="modal-bg">
+          <div class="modal-main">
+            <h1>Family Law</h1>
+            <p>Marsicano + Leyva PLLC is a full service Family Law Firm focused on catering to its clients during what is undeniably a complex and emotionally demanding chapter in their lives. Whether you need a divorce, adoption, annulment, enforcement/modification as it pertains to children and alimony, child custody, prenuptial agreements or postnuptial agreements, Marsicano + Leyva PLLC will handle your case with the skill, care and integrity necessary to advocate for your legal rights.</p>
+            <i class="fa fa-times fa-2x closer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-two">
+        <div class="modal-bg">
+          <div class="modal-main">
+            <h1>Business Law</h1>
+            <p>Marsicano + Leyva PLLC is dedicated to providing its business, franchise, and startup entrepreneurial clients with valuable legal guidance and representation on issues prevalent throughout the life of the company, from formation to wind-down. Whether it’s a routine contract or complex transaction, Marsicano + Leyva PLLC will work with you to increase your company’s overall performance and bottom line. Aside from a traditional hourly fee structure, Marsicano + Leyva PLLC offers a variety of unbundled legal services at a flat rate.</p>
+            <i class="fa fa-times fa-2x closer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-three">
+        <div class="modal-bg">
+          <div class="modal-main">
+            <h1>Real Estate Law</h1>
+            <p>Marsicano + Leyva PLLC is dedicated to providing clients and Homeowners' Associations with comprehensive assistance in a variety of areas involving Florida real property including the rights and interests in property, sales, purchases and other transfers of real property, settlement of claims against property rights or other dealings involving Florida commercial and residential real estate. Contracts related to real estate can be confusing; our attorneys will sit down with you and explain every aspect of your case. Whether it involves contract analysis and interpretation, litigation strategy or help you with the many different aspects of a purchase, sale or lease of real property, rely on our experienced team to assist you.</p>
+            <i class="fa fa-times fa-2x closer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-four">
+        <div class="modal-bg">
+          <div class="modal-main">
+            <h1>Commercial Litigation</h1>
+            <p>Marsicano + Leyva PLLC endeavors to insulate its corporate clients from liability. However, when a lawsuit is unavoidable, the attorneys at Marsicano + Leyva PLLC assist clients in making well-informed, strategic decisions from the onset of a dispute through resolution. We are experienced in handling a wide range of commercial disputes in both federal and state court including breach of contract cases, intellectual property disputes, partnership/joint venture disputes, business torts, breach of fiduciary duty allegations, and shareholder issues, among other areas. Above all, Marsicano + Leyva PLLC strives to execute strategies that match your company's objectives in an effective and efficient manner.</p>
+            <i class="fa fa-times fa-2x closer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-five">
+        <div class="modal-bg">
+          <div class="modal-main">
+            <h1>Civil Litigation</h1>
+            <p>Our attorneys have experience both in and out of the court room and are familiar with all areas of civil litigation, including motion practice, depositions, in-depth discovery, negotiation, mediation, trial preparation, and appeals. Whether its defending you in a dispute or pursuing a claim, let the attorneys at Marsicano + Leyva PLLC put their experience to work for you.</p>
+            <i class="fa fa-times fa-2x closer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-six">
+        <div class="modal-bg">
+          <div class="modal-main">
+            <h1>Consumer Litigation</h1>
+            <p>Our attorneys are passionate about defending you from predatory and aggressive behavior stemming from unethical debt collection practices. If you are being harassed regarding your debt, you may be entitled to compensation under the Telephone Consumer Protection Act, the Fair Debt Collection Practices Act, the Florida Consumer Collection Practices Act, the Fair Credit Reporting Act, and the Florida Deceptive and Unfair Trade Practices Act. Whether its foreclosure or credit card defense, our attorneys have experience on both sides of the issues enabling them to provide you with valuable and realistic insight into your case.</p>
+            <i class="fa fa-times fa-2x closer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-seven">
+        <div class="modal-bg">
+          <div class="modal-main">
+            <h1>Estate Planning</h1>
+            <p>In Florida, the creation of a will is still a very formal process and certain requirements must be met in order for your will to be respected by a court. A well-crafted estate plan can provide protection for your family, protection for you in the event you are injured or suffer an illness, and ultimately provide you with all around peace of mind. At Marsicano + Leyva PLLC we recognize that it can be difficult to navigate the many options available for planning your estate, which can encompass wills and trusts in all their varied forms. Marsicano + Leyva PLLC is dedicated to providing its clients with candid, straightforward, and thoughtful estate planning advice. We will work with you to determine which estate planning option is best suited for your needs.</p>
+            <i class="fa fa-times fa-2x closer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-eight">
+        <div class="modal-bg">
+          <div class="modal-main">
+            <h1>Probate</h1>
+            <p>At Marsicano + Leyva PLLC, our attorneys believe in providing the highest quality of service to all clients, whether their matter involves the crafting of a simple will or contesting a complicated inheritance. Our goal is to provide clients with exceptional personalized service with low overhead cost. Marsicano + Leyva PLLC understands that legal proceedings and probate matters can often seem unavoidably complex and confusing. If you have questions or concerns relating to a will, living will, power of attorney or probate matter do not hesitate to contact us and set up your free consultation.</p>
+            <i class="fa fa-times fa-2x closer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-nine">
+        <div class="modal-bg">
+          <div class="modal-main">
+            <h1>Employment Law</h1>
+            <p>At Marsicano + Leyva PLLC, we understand the federal and state laws affecting the rights of both individuals and businesses in the employment context. We provide compassionate representation for employees whose rights have been violated and whose complaints have been ignored by their company’s human resource department. However, we also provide aggressive representation for employers (both small and large) who face accusations of illegal employment practices. Businesses can also take advantage of our guidance and advice to develop proactive policies and agreements that protect your company’s interests and decrease the risk of future litigation.</p>
+            <i class="fa fa-times fa-2x closer"></i>
+          </div>
+        </div>
+      </div>
+
     <!-- Meet the team -->
-    <div class="team">
+    <div id="meet-team" class="container-light flex-container">
+      <div>
+        <h1 class="heading">Meet The Team</h1>
+        <p>___________________________________</p>
+      </div>
+      <div class="team">
+        <div class="column">
+          <img src="./resources/images/lauren-headshot.png">
+          <h2>Lauren Marsicano, Esq.</h2>
+          <h4>Co-Founder</h4>
+          <p>
+            Lauren Marsicano is a founding partner of Marsicano + Leyva PLLC with prior experience on both sides of the aisle providing guidance to both individuals and businesses and taking cases from inception through to trial and post-trial appeal. As an associate in the Litigation Department at Liebler, Gonzalez & Portuondo, she represented corporate and individual clients in federal and state trial and appellate courts in areas including complex commercial litigation, consumer litigation, debt collection litigation, and international law.
+            <br>
+            <br>
+            Prior to joining the Liebler, Gonzalez & Portuondo team, Ms. Marsicano was with a boutique litigation firm in Coral Gables. While there, she represented and advised small business owners and individual clients in areas including employment law, complex commercial litigation, intellectual property law, labor and employment litigation, trust and estate law, real property law, and international law. In addition, Ms. Marsicano was fortunate to gain valuable insight into the practice of law by interning for the Honorable Judge Lester Langer of the Eleventh Judicial Circuit of Florida, the General Counsel of the Global Labor and Employment division of Ryder Systems, Inc., and the managing partner of a corporate mining law firm in Santiago, Chile.
+            <br>
+            <br>
+            Ms. Marsicano graduated magna cum laude from the University of Miami School of Law where she was Managing Editor of the Inter-American Law Review, was a finalist in the Charles C. Papy, Jr. Moot Court Board Advanced Moot Court Competition, and attained the Honorable Theodore Klein Endowed Scholarship for her outstanding performance in the Litigation Skills Course. While earning her undergraduate degree in International Business and Finance, Ms. Marsicano competed for and secured an Honors Program Fellowship to study at the University of Oxford in Oxford, England, under academics who are leaders in their fields.
+            <br>
+            <br>
+            <span class="bold">Bar and Court Admissions:</span>
+            <br>
+            Florida
+            U.S. District Court, Southern District of Florida
+            U.S. District Court, Middle District of Florida
+            <br>
+            <br>
+            <span class="bold">Professional Memberships and Community Involvement:</span>
+            <br>
+            Co-Chair of the American Bar Association Young Lawyer Division Litigation Committee
+            Co-Chair of the Young Lawyer Subcommittee for the ABA Section of Litigation Commercial and Business Litigation Committee
+            Dade County Bar Association, member
+            Coral Gable Bar Association, member
+            Florida Association for Women Lawyers, Miami-Dade Chapter member
+            The Florida Bar, Young Lawyer, Business Law, Litigation, and International Law Sections member
+            <br>
+            <br>
+            <span class="bold">Education:</span>
+            <br>
+            University of Miami School of Law, J.D., magna cum laude
+            University of Tampa, B.A. with Honors Distinction, magna cum laude
+          </p>
+        </div>
+        <div class="column">
+          <img src="./resources/images/carolina-headshot.png">
+          <h2>Carolina Leyva, Esq.</h2>
+          <h4>Co-Founder</h4>
+          <p>
+            Carolina Leyva is a founding partner of Marsicano + Leyva PLLC and represents clients in all aspects of family law, probate, will contests, landlord-tenant disputes, Florida Deceptive and Unfair Trade Practices Act issues, commercial litigation, consumer litigation, transactional work and complex civil litigation matters.
+            <br>
+            <br>
+            As an associate in a boutique litigation firm, located in Miami, Florida, Ms. Leyva spearheaded the firms trust and estates department and gained practical experience representing companies and individuals in areas including family law, employment law, commercial litigation, real property law, foreclosure defense, bankruptcy and other general areas of civil litigation.
+            <br>
+            <br>
+            In addition, Ms. Leyva gained valuable legal experience by serving as a legal intern for a boutique immigration firm in Miami, Florida, for the General Counsel of the Global Labor and Employment division of Ryder Systems, Inc., and for the Mobile Financial Services department of the MasterCard and Telefonica International Joint Venture.
+            <br>
+            <br>
+            Ms. Leyva earned her juris doctor from the University of Miami School of Law where she served as a legal research assistant for University of Miami School of Law Professor Lili Levi.
+            <br>
+            <br>
+            <span class="bold">Bar and Court Admissions:</span>
+            <br>
+            Florida
+            U.S. District Court, Southern District of Florida
+            <br>
+            <br>
+            <span class="bold">Professional Memberships and Community Involvement:</span>
+            <br>
+            The Florida Bar Young Lawyer Division, member
+            The Florida Bar Family Law Section, member
+            The Florida Bar Real Property, Probate and Trust Law Section, member
+            <br>
+            <br>
+            <span class="bold">Education:</span>
+            <br>
+            University of Miami School of Law, Juris Doctor
+            University of Florida, Bachelor of Science in Advertising, cum laude
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Footer: copyright info & misc. nav menu -->
-    <footer>
-      <p><i class="fa fa-copyright"></i> 2017 Marsicano + Leyva PLLC</p>
-    </footer>
+    <div id="contact" class="container-dark flex-container">
+      <div class="contact">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3593.1256545587316!2d-80.19208197525907!3d25.766412840690357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x88d9b682e4bb8677%3A0x66b51a145f81c36f!2smarsican+leyva!3m2!1d25.7664296!2d-80.1898908!5e0!3m2!1sen!2sus!4v1502743183339" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <ul>
+          <li class="foo">CONTACT US</li>
+          <li>Marsicano + Leyva PLLC</li>
+          <li>777 Brickell Ave #500</li>
+          <li>Miami, FL 33131</li>
+          <li>(305) 721-2917</li>
+          <li><a href="mailto:questions@mlesquire.com">questions@mlesquire.com</a></li>
+        </ul>
+      </div>
+      <footer>
+        <p><i class="fa fa-copyright"></i> 2017 Marsicano + Leyva PLLC. All Rights Reserved.</p>
+      </footer>
+    </div>
 
   <!-- Link jQuery CDN and javascript -->
   <script src="https://s3.amazonaws.com/codecademy-content/projects/jquery.min.js"></script>
