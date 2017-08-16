@@ -185,7 +185,6 @@ var main = function() {
   // Social icon animations
   $('.circle').hover(function(){
   	$(this).toggleClass('minify');
-  	$(this).next().toggleClass('invert');
   });
   //$('.social').hover(function(){
   	//$(this).prev().toggleClass('minify');
