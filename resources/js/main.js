@@ -136,45 +136,61 @@ var main = function() {
   });
 };
 
-$('.btn-family').click(function() {
-  $('#modal-one').fadeIn();
-});
+  //areas of practice hover effects
+  $('.area').hover(function() {
+    $(this).find('a').toggleClass('invert');
+  });
 
-$('.btn-business').click(function() {
-  $('#modal-two').fadeIn();
-});
+  //modal click event handlers
+  $('#family').click(function() {
+    $('#modal-family').fadeIn();
+  });
 
-$('.btn-real').click(function() {
-  $('#modal-three').fadeIn();
-});
+  $('#business').click(function() {
+    $('#modal-business').fadeIn();
+  });
 
-$('.btn-commercial').click(function() {
-  $('#modal-four').fadeIn();
-});
+  $('#property').click(function() {
+    $('#modal-property').fadeIn();
+  });
 
-$('.btn-civil').click(function() {
-  $('#modal-five').fadeIn();
-});
+  $('#commercial').click(function() {
+    $('#modal-commercial').fadeIn();
+  });
 
-$('.btn-consumer').click(function() {
-  $('#modal-six').fadeIn();
-});
+  $('#civil').click(function() {
+    $('#modal-civil').fadeIn();
+  });
 
-$('.btn-estate').click(function() {
-  $('#modal-seven').fadeIn();
-});
+  $('#consumer').click(function() {
+    $('#modal-consumer').fadeIn();
+  });
 
-$('.btn-probate').click(function() {
-  $('#modal-eight').fadeIn();
-});
+  $('#estate').click(function() {
+    $('#modal-estate').fadeIn();
+  });
 
-$('.btn-employment').click(function() {
-  $('#modal-nine').fadeIn();
-});
+  $('#probate').click(function() {
+    $('#modal-probate').fadeIn();
+  });
 
-$('.closer').click(function() {
-  $('.modal').fadeOut();
-});
+  $('#employment').click(function() {
+    $('#modal-employment').fadeIn();
+  });
+
+  $('.closer').click(function() {
+    $('.modal').fadeOut();
+  });
+
+  // Social icon animations
+  $('.circle').hover(function(){
+  	$(this).toggleClass('minify');
+  	$(this).next().toggleClass('invert');
+  });
+  //$('.social').hover(function(){
+  	//$(this).prev().toggleClass('minify');
+  	//$(this).toggleClass('invert');
+  //});
 
 //call main function when document is ready
 $(document).ready(main);

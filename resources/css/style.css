@@ -33,6 +33,20 @@ body {
   align-content: center;
 }
 
+.highlight {
+  color: #FEFDF9;
+  background-color: #1292B9;
+}
+
+.invert {
+  color: #1292B9;
+  background-color: #FEFDF9;
+}
+
+.opaque {
+  opacity: 0.75;
+}
+
 /* ----- Links ----- */
 a, a:visited {
   color: #FEFDF9;
@@ -76,15 +90,6 @@ nav {
 .slide-menu li:hover{
   background-color: #1292B9;
   cursor: pointer;
-}
-
-.social-icons {
-  display: flex;
-  padding: 1em;
-}
-
-.social-icons li {
-  padding: 1em;
 }
 
 /* ----- Banner ----- */
@@ -167,12 +172,6 @@ nav {
   transition: color 200ms ease 0ms;
 }
 
-.highlight {
-  color: #FEFDF9;
-  background-color: #1292B9;
-  opacity: 0.75;
-}
-
 .fa-globe, .fa-gavel, .fa-hourglass {
   transition: all 650ms ease 50ms;
 }
@@ -183,7 +182,7 @@ nav {
   height: auto;
   color: #FEFDF9;
   margin-bottom: 5em;
-  margin-top: 3em;
+  margin-top: 0.5em;
 }
 
 .heading {
@@ -222,16 +221,15 @@ nav {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  transition: all 250ms ease-in-out 25ms;
+  transition: all 500ms ease 50ms;
 }
 
 .area:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .area a {
-  color: #FEFDF9;
-  background-color: #1292B9;
   border-top: 2px solid #1292B9;
   border-left: 2px solid #1292B9;
   border-right: 2px solid #1292B9;
@@ -240,15 +238,10 @@ nav {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   padding: 0.5em;
+  opacity: 0.9;
   font-size: 1.25em;
   font-weight: bold;
-  opacity: 1;
   transition: all 250ms ease;
-}
-
-.area a:hover {
-  color: #1292B9;
-  background-color: #FEFDF9;
 }
 
 #family {
@@ -412,7 +405,7 @@ footer {
   align-items: flex-end;
   color: #FEFDF9;
   background-color: #1B2729;
-  width: 100%;
+  width: 80%;
   height: 5em;
   padding-bottom: 1em;
 }
@@ -445,4 +438,43 @@ footer {
 .foo {
   font-size: 1.35em;
   text-decoration: underline;
+}
+
+/* ----- Social Icons ----- */
+.social-wrapper {
+	display: flex;
+}
+
+.social-icons {
+	height: auto;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em;
+}
+
+.circle {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	background: linear-gradient(220deg, #1292B9, #1E5578);
+	border-radius: 50px;
+	height: 25px;
+	width: 25px;
+	padding: 25px;
+	transition: all 500ms ease 50ms;
+  color: #FEFDF9;
+}
+
+.minify {
+	transform: scale(-0.0);
+	cursor: pointer;
+}
+
+.fa-facebook, .fa-instagram, .fa-linkedin {
+	position: fixed;
+	transition: all 500ms ease 200ms;
+  color: #FEFDF9;
 }
