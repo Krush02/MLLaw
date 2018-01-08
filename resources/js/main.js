@@ -24,7 +24,7 @@ var main = function() {
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
         location.hostname == this.hostname
       ) {
-        // Figure out element to scroll to
+        // Find element to scroll to
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         // Does a scroll target exist?
@@ -176,6 +176,22 @@ var main = function() {
 
   $('#employment').click(function() {
     $('#modal-employment').fadeIn();
+  });
+
+  $('#debt').click(function() {
+    $('#modal-debt').fadeIn();
+  });
+
+  $('#tenant').click(function() {
+    $('#modal-tenant').fadeIn();
+  });
+
+  $('#coming').click(function() {
+    $('#modal-coming').fadeIn();
+  });
+
+  $('#pay').click(function() {
+    $('#modal-pay').fadeIn();
   });
 
   $('.closer').click(function() {
