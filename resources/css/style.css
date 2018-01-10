@@ -425,7 +425,8 @@ nav {
 }
 
 .team-list {
-  width: 50%;
+  width: 60%;
+  margin-top: 1em;
 }
 
 .team-list li {
@@ -443,16 +444,17 @@ nav {
   flex-flow: column;
   padding: 1em;
   align-items: center;
+  border-bottom: 1px solid #D3D3D3;
 }
 
 .column img {
   padding: 0.25em;
   border: 2px solid #D3D3D3;
-  width: 20em;
-  height: 29em;
+  width: 15em;
+  height: 22em;
 }
 
-.lauren {
+.flex-row {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
@@ -467,6 +469,11 @@ nav {
   overflow: hidden;
   transition: all 100ms linear 100ms;
   padding: 0;
+}
+
+.tab-title {
+  width: 50%;
+  font-size: 1em;
 }
 
 input {
@@ -498,7 +505,7 @@ label {
 
 /* :checked */
 input:checked ~ .tab-content {
-  max-height: 30em;
+  max-height: 35em;
 }
 
 /* Icon */

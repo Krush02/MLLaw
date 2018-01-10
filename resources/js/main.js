@@ -108,33 +108,33 @@ var main = function() {
   };
 
   // blurb highlight hover effect
-  $('.blurb').hover(function() {
-    $(this).addClass('highlight');
-  }, function() {
-    $(this).removeClass('highlight');
-  });
+  //$('.blurb').hover(function() {
+  //  $(this).addClass('highlight');
+  //}, function() {
+  //  $(this).removeClass('highlight');
+  //});
 
   // gavel spin on hover effect
-  $('#gavel').hover(function() {
-    $('#gavel i').addClass("fa-rotate-270");
-  }, function() {
-    $('#gavel i').removeClass("fa-rotate-270");
-  });
+  //$('#gavel').hover(function() {
+  //  $('#gavel i').addClass("fa-rotate-270");
+  //}, function() {
+  //  $('#gavel i').removeClass("fa-rotate-270");
+  //});
 
   // hourglass spin on hover effect
-  $('#hourglass').hover(function() {
-    $('#hourglass i').addClass("fa-rotate-270");
-  }, function() {
-    $('#hourglass i').removeClass("fa-rotate-270");
-  });
+  //$('#hourglass').hover(function() {
+  //  $('#hourglass i').addClass("fa-rotate-270");
+  //}, function() {
+  //  $('#hourglass i').removeClass("fa-rotate-270");
+  //});
 
   // globe spin on hover effect
-  $('#globe').hover(function() {
-    $('#globe i').addClass("fa-rotate-270");
-  }, function() {
-    $('#globe i').removeClass("fa-rotate-270");
-  });
-};
+  //$('#globe').hover(function() {
+  //  $('#globe i').addClass("fa-rotate-270");
+  //}, function() {
+  //  $('#globe i').removeClass("fa-rotate-270");
+  //});
+  };
 
   //areas of practice hover effects
   $('.area').hover(function() {
