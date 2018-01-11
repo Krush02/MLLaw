@@ -83,6 +83,10 @@ p, span, h6, ul, li {
   opacity: 0.75;
 }
 
+.no-opacity {
+  opacity: 1;
+}
+
 .underline {
   text-decoration: underline;
 }
@@ -581,7 +585,7 @@ footer {
 /* ----- Social Icons ----- */
 .social-wrapper {
 	display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: space-around;
 	height: auto;
 	width: auto;
@@ -592,7 +596,7 @@ footer {
 	justify-content: center;
 	align-content: center;
 	align-items: center;
-	background: linear-gradient(50deg, #1292B9, #1E5578);
+	background: linear-gradient(100deg, #1292B9, #1E5578);
 	border-radius: 4em;
 	height: 3.5em;
 	width: 3.5em;
@@ -601,13 +605,14 @@ footer {
 }
 
 .circle:hover {
-	transform: scale(-0.0);
+	/*transform: scale(-0.0);*/
 	cursor: pointer;
 }
 
 .fa-facebook, .fa-instagram, .fa-linkedin {
 	position: fixed;
 	transition: all 500ms ease 200ms;
+  color: white;
 }
 
 /* ----- Make a payment ----- */
@@ -621,12 +626,13 @@ footer {
   color: #FEFDF9;
   text-align: center;
   font-weight: bold;
-  width: 50%;
+  width: 30%;
   padding: 1em;
   margin-top: 1em;
   background-color: #1292B9;
   transition: all 300ms ease 50ms;
   border: 2px solid #1292B9;
+  border-radius: 5px;
 }
 
 .btn:hover {
