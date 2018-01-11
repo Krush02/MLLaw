@@ -171,6 +171,11 @@ nav {
 	color: #FEFDF9;
 }
 
+.nav-link img {
+  height: 90%;
+  width: auto;
+}
+
 .phone {
   color: #FEFDF9;
   font-weight: bold;
