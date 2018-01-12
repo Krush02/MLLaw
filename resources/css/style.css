@@ -4,6 +4,11 @@ Secondary: #1E5578
 light: #FEFDF9
 Dark: #1B2729 */
 
+/* ----- Tablet/smartphone media query breakpoint ----- */
+@media only screen and (max-width: 760px) {
+
+}
+
 /* ----- General styling ----- */
 body {
   background-color: #FEFDF9;
@@ -530,7 +535,7 @@ label {
 
 /* :checked */
 input:checked ~ .tab-content {
-  max-height: 35em;
+  max-height: 50em;
 }
 
 /* Icon */
