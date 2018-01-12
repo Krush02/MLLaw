@@ -199,13 +199,9 @@ var main = function() {
   });
 
   // Social icon animations
-  //$('.circle').hover(function(){
-  //	$(this).toggleClass('minify');
-  //});
-  //$('.social').hover(function(){
-  	//$(this).prev().toggleClass('minify');
-  	//$(this).toggleClass('invert');
-  //});
+$('.social').hover(function(){
+	$(this).toggleClass('social-highlight');
+});
 
   // ===== Scroll to Top ====
 $(window).scroll(function() {

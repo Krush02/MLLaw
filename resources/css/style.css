@@ -758,7 +758,7 @@ footer {
   transition: all 250ms ease;
 }
 
-.foo h5 {
+.align-left{
   text-align: left;
 }
 
@@ -771,28 +771,17 @@ footer {
 	width: auto;
 }
 
-.circle {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	background: linear-gradient(100deg, #1292B9, #1E5578);
-	border-radius: 4em;
-	height: 3.5em;
-	width: 3.5em;
-	transition: all 500ms ease 50ms;
-  position: relative;
-}
-
-.circle:hover {
-	/*transform: scale(-0.0);*/
-	cursor: pointer;
-}
-
 .fa-facebook, .fa-instagram, .fa-linkedin {
-	position: fixed;
-	transition: all 500ms ease 200ms;
-  color: white;
+  padding: .35em;
+	background: #1292B9;
+	border-radius: 5em;
+  color: #FEFDF9;
+  width: 1em;
+  text-align: center;
+}
+
+.social-highlight {
+	opacity: .7;
 }
 
 /* ----- Make a payment ----- */
