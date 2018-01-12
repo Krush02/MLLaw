@@ -16,7 +16,7 @@ h1 {
   margin: 0.75em 0;
 }
 h2 {
-  font-size: 2.25em;
+  font-size: 2.5em;
   text-align: center;
   margin: 0.75em 0;
 }
@@ -157,6 +157,22 @@ nav {
   transition: all 300ms ease 30ms;
 }
 
+.home {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+}
+
+.home img {
+  height: 100%;
+  margin-left: 1.25em;
+}
+
+.home img:hover {
+  background-color: #1292B9;
+}
+
 .nav-link {
   display: flex;
   justify-content: center;
@@ -169,11 +185,6 @@ nav {
 .nav-link:hover {
 	background-color: #1292B9;
 	color: #FEFDF9;
-}
-
-.nav-link img {
-  height: 90%;
-  width: auto;
 }
 
 .phone {
@@ -219,7 +230,7 @@ nav {
 }
 
 .about p{
-  padding: 1em;
+  padding: 1em 4em;
 }
 
 .extras {
@@ -394,7 +405,7 @@ nav {
   height: auto;
   background: #FEFDF9;
   border-radius: 6px;
-  top: 25%;
+  top: 15%;
   left: 25%;
   z-index: 1;
 }
@@ -553,6 +564,30 @@ input[type=radio]:checked + label::after {
   transform: rotateX(180deg);
 }
 
+/* --- Professional Memberships & Associations --- */
+.seals {
+  width: 80%;
+  margin-bottom: 5em;
+}
+
+.seal-list {
+  display: flex;
+  flex-flow: row;
+  overflow: scroll;
+  justify-content: space-between;
+}
+
+.seal-list li {
+  display: flex;
+  align-items: center;
+}
+
+.seal-list img {
+  padding: 1em;
+  height: auto;
+  width: 10em;
+}
+
 /* --- Testimonials --- */
 .testimonials {
   display: flex;
@@ -568,7 +603,7 @@ input[type=radio]:checked + label::after {
 
 /* testimonials slider */
 .tsl {
-	padding: 2em 3em;
+	padding: 2em 0 0 3em;
 }
 
 .tsl-list {
@@ -577,6 +612,7 @@ input[type=radio]:checked + label::after {
 	padding:0;
 	position:relative;
 	overflow:hidden;
+  width: 80%;
 }
 
 .tsl-list .seperator {
@@ -594,13 +630,12 @@ input[type=radio]:checked + label::after {
 	animation-play-state:running;
 }
 
-/* lets hide all items from second */
+/* hide all items from second */
 .tsl-item + .tsl-item {
 	opacity:0;
 }
 
 /* animation */
-
 /* animation shift */
 /* negative delay needed to pause works correctly on hover */
 .tsl-item:nth-child(2) {
@@ -793,6 +828,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 1000;
     background: #1292B9;
     opacity: 0.7;
     width: 50px;
