@@ -590,7 +590,7 @@ input[type=radio]:checked + label::after {
 .seal-list img {
   padding: 1em;
   height: auto;
-  width: 10em;
+  width: 6em;
 }
 
 /* --- Testimonials --- */
@@ -717,15 +717,15 @@ each slide will play 1/5 of animation = 20%
   justify-content: space-around;
   align-items: center;
   padding: 2em;
-  width: 60%;
+  width: 80%;
 }
 
 .consult h5 {
   color: #FEFDF9;
 }
 
-.consult .btn {
-  width: 20%;
+.consult a {
+  width: 50%;
 }
 
 /* ----- Footer styling ----- */
