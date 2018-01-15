@@ -506,13 +506,13 @@ nav {
   font-size: 1em;
 }
 
-input {
+.tab input {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
 
-label {
+.tab label {
   position: relative;
   display: block;
   padding: 0;
@@ -534,12 +534,12 @@ label {
 }
 
 /* :checked */
-input:checked ~ .tab-content {
+.tab input:checked ~ .tab-content {
   max-height: 50em;
 }
 
 /* Icon */
-label::after {
+.tab label::after {
   position:absolute;
   right: 0;
   top: 0;
@@ -862,4 +862,107 @@ footer {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+/* --- Contact Form Styling --- */
+.contact-form {
+  display: flex;
+	width:80%;
+	margin: 1em 0;
+}
+
+.contact-left {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.contact-right {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.contact-right h6 {
+  text-align: center;
+  margin-top: 5em;
+}
+
+#contact-form {
+  width: 80%;
+	padding: 2em;
+	margin: 2em 0;
+}
+
+fieldset {
+	margin: .25em;
+	min-width: 100%;
+	padding: 1em;
+	width: 100%;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form textarea {
+	width: 100%;
+  height: 10px;
+	border: 1px solid #D3D3D3;
+	background:#FFF;
+	margin: 0 0 .25em;
+	padding: 1em;
+  font-family: lato;
+}
+
+#contact-form input[type="text"]:hover, #contact-form input[type="email"]:hover, #contact-form input[type="tel"]:hover, #contact-form textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border: 1px solid #1292B9;
+}
+
+#contact-form textarea {
+	max-width:100%;
+  height: 7em;
+  resize: vertical;
+  font-family: lato;
+}
+
+#contact-form button[type="submit"] {
+	cursor: pointer;
+	width:20%;
+	border: 2px solid #1292B9;
+  border-radius: 25px;
+	background: #1292B9;
+	color: #FEFDF9;
+	margin:0 0 0.25em;
+	padding: 1em;
+  font-weight: bold;
+}
+
+#contact-form button[type="submit"]:hover {
+	background:#FEFDF9;
+  color: #1292B9;
+	-webkit-transition:background 0.3s ease;
+	-moz-transition:background 0.3s ease;
+	transition:background 0.3s ease;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+	outline: 0;
+	border: 1px solid #1292B9;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+.black {
+  color: #1B2729;
 }
