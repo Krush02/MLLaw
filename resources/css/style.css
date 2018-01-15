@@ -40,7 +40,11 @@ h5{
   text-align: center;
   margin: 0.75em 0;
 }
-p, span, h6, ul, li {
+h6{
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+p, span, ul, li {
   font-size: 1em;
   letter-spacing: 1.5px;
   line-height: 1.2;
@@ -72,6 +76,10 @@ p, span, h6, ul, li {
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+.margin-right {
+  margin-right: 1em;
 }
 
 .highlight {
@@ -112,7 +120,7 @@ p, span, h6, ul, li {
 
 .container-black {
   width: 100%;
-  background-color: #283a3e;
+  background-color: #283A3E;
 }
 
 .flex-container {
@@ -767,6 +775,8 @@ footer {
   text-align: left;
 }
 
+.contact-list
+
 /* ----- Social Icons ----- */
 .social-wrapper {
 	display: flex;
@@ -789,13 +799,15 @@ footer {
 	opacity: .7;
 }
 
-/* ----- Make a payment ----- */
-.pay-container {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+.move-right {
+  position: relative;
+  right: 0
+}
+.move-right:hover {
+  right: -10px;
 }
 
+/* ----- Make a payment ----- */
 .btn {
   display: flex;
   justify-content: center;
@@ -882,11 +894,12 @@ footer {
   display: flex;
   flex-flow: column;
   width: 100%;
+  align-items: center;
 }
 
 .contact-right h6 {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 #contact-form {
@@ -897,13 +910,13 @@ footer {
 
 fieldset {
 	margin: .25em;
-	min-width: 100%;
+	min-width: 80%;
 	padding: 1em;
-	width: 100%;
+	width: 90%;
 }
 
 #contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form textarea {
-	width: 100%;
+	width: 95%;
   height: 10px;
 	border: 2px solid #D3D3D3;
   border-radius: 4px;
