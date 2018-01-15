@@ -905,8 +905,9 @@ fieldset {
 #contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form textarea {
 	width: 100%;
   height: 10px;
-	border: 1px solid #D3D3D3;
-	background:#FFF;
+	border: 2px solid #D3D3D3;
+  border-radius: 4px;
+	background: #FEFDF9;
 	margin: 0 0 .25em;
 	padding: 1em;
   font-family: lato;
@@ -916,7 +917,7 @@ fieldset {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
-	border: 1px solid #1292B9;
+	border: 2px solid rgba(18, 146, 185, 0.6);
 }
 
 #contact-form textarea {
@@ -948,7 +949,7 @@ fieldset {
 
 #contact-form input:focus, #contact-form textarea:focus {
 	outline: 0;
-	border: 1px solid #1292B9;
+	border: 2px solid rgba(18, 146, 185, 0.4);
 }
 ::-webkit-input-placeholder {
  color:#888;
