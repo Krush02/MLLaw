@@ -804,8 +804,6 @@ footer {
 	display: flex;
   flex-flow: row;
   justify-content: space-around;
-	height: auto;
-	width: auto;
 }
 
 .fa-facebook, .fa-instagram, .fa-linkedin {
@@ -817,7 +815,7 @@ footer {
   text-align: center;
 }
 
-.social-highlight {
+.social:hover {
 	opacity: .7;
 }
 

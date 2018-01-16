@@ -199,9 +199,9 @@ var main = function() {
   });
 
   // Social icon animations
-$('.social').hover(function(){
-	$(this).toggleClass('social-highlight');
-});
+//$('.social').hover(function(){
+//	$(this).toggleClass('social-highlight');
+//});
 
   // ===== Scroll to Top ====
 $(window).scroll(function() {
