@@ -1,0 +1,1005 @@
+/* --- Color Palette ---
+Primary: #1292B9
+Secondary: #1E5578
+light: #FEFDF9
+Dark: #1B2729 */
+
+/* ----- General styling ----- */
+body {
+  background-color: #FEFDF9;
+  font-family: 'lato', sans-serif;
+  font-size: 16px;
+}
+h1 {
+  font-size: 5em;
+  text-align: center;
+  margin: 0.75em 0;
+}
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0.75em 0;
+}
+h3 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0.75em 0;
+}
+h4 {
+  font-size: 1.75em;
+  text-align: center;
+  margin: 0.75em 0;
+}
+h5{
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0.75em 0;
+}
+h6{
+  font-size: 1.25em;
+  margin: 0.5em 0;
+}
+p, span, ul, li {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.flex-heading {
+  display: flex;
+  flex-flow:column wrap;
+  align-items: center;
+}
+
+.seperator {
+  margin: .7em 0;
+  width: 65%;
+  line-height: 2;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic{
+  font-style: italic;
+  margin-top: -.3em;
+}
+
+.center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.margin-right {
+  margin-right: 1em;
+}
+
+.margin-left {
+  margin-left: 1em;
+}
+
+.margin-top {
+  margin-top: 2em;
+}
+
+.highlight {
+  color: #FEFDF9;
+  background-color: #1292B9;
+}
+
+.invert {
+  color: #1292B9;
+  background-color: #FEFDF9;
+}
+
+.opaque {
+  opacity: 0.75;
+}
+
+.no-opacity {
+  opacity: 1;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.padding-top {
+  padding-top:1em;
+}
+
+.container-light {
+  width: 100%;
+  background-color: #FEFDF9;
+}
+
+.container-dark {
+  width: 100%;
+  background-color: #1B2729;
+}
+
+.container-black {
+  width: 100%;
+  background-color: #283A3E;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* ----- Links ----- */
+a, a:visited {
+  color: #FEFDF9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1292B9;
+}
+
+/* ----- Nav Menu ----- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 5em;
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+  background-color: #1B2729;
+  opacity: 0.9;
+  align-items: center;
+}
+
+.slide-menu {
+  display: inline-flex;
+  margin-left: 0.25em;
+  width: 100%;
+  background-color: #1B2729;
+}
+
+.slide-menu li {
+  height: 4em;
+  width: 100%;
+  letter-spacing: 1px;
+  transition: all 300ms ease 30ms;
+}
+
+.home {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+}
+
+.home img {
+  height: 100%;
+  margin-left: 1.25em;
+}
+
+.home img:hover {
+  background-color: #1292B9;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-link:hover {
+	background-color: #1292B9;
+	color: #FEFDF9;
+}
+
+.phone {
+  color: #FEFDF9;
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-right: 5%;
+}
+
+/* ----- Banner ----- */
+.banner {
+  background-image: url("../images/banner-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30em;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  color: #1E5578;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-headline {
+  background-color: #FEFDF9;
+  opacity: 0.8;
+  padding: 0 1em 1.5em 1em;
+}
+
+.banner-headline h5 {
+  margin-top: -1.75em;
+}
+
+/* ----- About Us content styling ----- */
+.about {
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  height: auto;
+  margin-top: 3em;
+}
+
+.about p{
+  padding: 1em 4em;
+  font-size: 1.1em;
+}
+
+.extras {
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.blurb {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em;
+  margin-bottom: 3em;
+  width: 30%;
+  height: auto;
+  transition: color 200ms ease 0ms;
+}
+
+.fa-globe, .fa-gavel, .fa-hourglass {
+  transition: all 650ms ease 50ms;
+}
+
+/* ----- Areas of practice ----- */
+.areas {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  height: auto;
+  color: #FEFDF9;
+  margin-bottom: 7em;
+}
+
+.areas ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.areas ul li {
+  margin: 1em 0;
+  border: 2px solid #1292B9;
+  border-radius: 5px;
+}
+
+.area-container {
+  width: 20em;
+  height: 15em;
+}
+
+.area {
+  width: 15em;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: all 500ms ease 50ms;
+}
+
+.area:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.area a {
+  border-top: 2px solid #1292B9;
+  border-left: 2px solid #1292B9;
+  border-right: 2px solid #1292B9;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 0.5em;
+  opacity: 0.9;
+  font-weight: bold;
+  transition: all 250ms ease;
+}
+
+#family {
+  background-image: url("../images/family.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#business {
+  background-image: url("../images/start-up.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#commercial {
+  background-image: url("../images/handshake.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#civil {
+  background-image: url("../images/law-books.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#consumer {
+  background-image: url("../images/gavel.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#estate {
+  background-image: url("../images/meeting.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#probate {
+  background-image: url("../images/contract-signing.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#employment {
+  background-image: url("../images/startup-photos.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#property {
+  background-image: url("../images/property.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#debt {
+  background-image: url('../images/debt.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+#tenant {
+  background-image: url('../images/coming-soon.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#coming {
+  background-image: url('../images/coming-soon.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----- Modals ----- */
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.modal-bg {
+  background: rgba(0,0,0,.6);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.modal-main {
+  position:fixed;
+  width: 50%;
+  height: auto;
+  background: #FEFDF9;
+  border-radius: 6px;
+  top: 10%;
+  left: 25%;
+  z-index: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  opacity: 1;
+  padding-bottom: 1em;
+}
+
+.pay-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 60%;
+}
+
+.modal-main h2 {
+  padding: 1em;
+  border-bottom: #D9D9D9 1px solid;
+}
+
+.modal-main p {
+  letter-spacing: 1.5;
+  line-height: 1.5;
+  padding: 2em;
+}
+
+.closer {
+  position: absolute;
+  cursor: pointer;
+  top: 0.25em;
+  left: 0.25em;
+  transition: color 250ms ease;
+}
+
+.closer:hover {
+  color: #1292B9;
+}
+/* ----- End of Modals ----- */
+
+/* ----- Meet the team ----- */
+#meet-team {
+  display: flex;
+  flex-flow: column;
+}
+
+.team {
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.team-list {
+  width: 60%;
+  margin-top: 1em;
+}
+
+.team-list li {
+  margin: 0.25em 0 0 1em;
+}
+
+.team-list li i {
+  font-size: .5em;
+}
+
+.column {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  padding: 1em;
+  align-items: center;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.column img {
+  padding: 0.25em;
+  border: 2px solid #D3D3D3;
+  width: 15em;
+  height: 22em;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+/* Accordion styling */
+.tab {
+  display: block;
+  position: relative;
+  margin-bottom: 1em;
+  width: 100%;
+  overflow: hidden;
+  transition: all 100ms linear 100ms;
+  padding: 0;
+}
+
+.tab-title {
+  width: 50%;
+  font-size: 1em;
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0;
+  background: #FEFDF9;
+  font-weight: bold;
+  font-size: 1.25em;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #FEFDF9;
+  -webkit-transition: max-height 750ms ease 100ms;
+  -o-transition: max-height 750ms ease 100ms;
+  transition: max-height 750ms ease 100ms;
+  margin-bottom: 0.5em;
+}
+
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 50em;
+}
+
+/* Icon */
+.tab label::after {
+  position:absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+input[type=checkbox] + label::after {
+  content: "+";
+}
+
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+
+/* --- Professional Memberships & Associations --- */
+.seals {
+  width: 85%;
+  margin-bottom: 5em;
+}
+
+.seal-list {
+  display: flex;
+  flex-flow: row;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.seal-list li {
+  display: flex;
+  align-items: center;
+  transition: all 500ms ease;
+}
+
+.seal-list li:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.seal-list img {
+  padding: 1em;
+  height: auto;
+  width: 6em;
+}
+
+/* --- Testimonials --- */
+.testimonials {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  color: #FEFDF9;
+}
+
+.testimonials img {
+  width: 50%;
+  height: 50%;
+}
+
+/* testimonials slider */
+.tsl {
+	padding: 2em 0 0 3em;
+}
+
+.tsl-list {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+  width: 80%;
+}
+
+.tsl-list .seperator {
+  width: 15%;
+}
+
+.tsl-item {
+	position:relative;
+	top:0;
+	left:100%;
+	margin-left:-100%;
+	width:100%;
+	float:left;
+	animation: tsl-fade-in-out 25s infinite;
+	animation-play-state:running;
+}
+
+/* hide all items from second */
+.tsl-item + .tsl-item {
+	opacity:0;
+}
+
+/* animation */
+/* animation shift */
+/* negative delay needed to pause works correctly on hover */
+.tsl-item:nth-child(2) {
+	animation-delay: -20s;
+}
+.tsl-item:nth-child(3) {
+	animation-delay: -15s;
+}
+.tsl-item:nth-child(4) {
+	animation-delay: -10s;
+}
+.tsl-item:nth-child(5) {
+	animation-delay: -5s;
+}
+/*
+we have 5 items.
+we want each slide to play ≈5s
+
+each slide will play 1/5 of animation = 20%
+1% of animation is for transitions (fading)
+*/
+
+@keyframes tsl-fade-in-out {
+	0% {
+		opacity:0;
+		z-index:2;
+	}
+	1% {
+		opacity:1;
+		z-index:2;
+	}
+	20% {
+		opacity:1;
+	}
+	21% {
+		opacity:0;
+		z-index:1;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+/* pause on hover */
+.tsl-list:hover .tsl-item {
+	animation-play-state:paused;
+}
+
+/* testimonials theme */
+.tsl-content {
+	font: 12px/1.4 Arial;
+}
+
+.tsl-content p {
+	margin-top:0;
+  font-size: 1.15em;
+  line-height: 1.5;
+}
+
+.tsl-meta {
+  margin: 1em 0;
+	font: 11px/1.4 Arial;
+	text-align: right;
+}
+
+.tsl-meta p {
+	margin-bottom:0;
+}
+
+/* --- Free consultation --- */
+.consult {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  width: 80%;
+}
+
+.consult h5 {
+  color: #FEFDF9;
+}
+
+.consult a {
+  width: 50%;
+}
+
+/* ----- Footer styling ----- */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #FEFDF9;
+  background-color: #1B2729;
+  width: 80%;
+  height: 5em;
+  padding-bottom: 1em;
+}
+
+.contact {
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-content: space-around;
+  color: #FEFDF9;
+  padding: 2em;
+  margin-top: 1em;
+}
+
+.contact ul {
+  padding: 0 2em;
+}
+
+.contact ul li {
+  padding: 0.5em 0;
+}
+
+.contact ul a {
+
+  transition: all 250ms ease;
+}
+
+.align-left{
+  text-align: left;
+  margin-top: 3em;
+}
+
+.contact-list
+
+/* ----- Social Icons ----- */
+.social-wrapper {
+	display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.fa-facebook, .fa-instagram, .fa-linkedin {
+  padding: .35em;
+	background: #1292B9;
+	border-radius: 5em;
+  color: #FEFDF9;
+  width: 1em;
+  text-align: center;
+}
+
+.social:hover {
+	opacity: .7;
+}
+
+.move-right {
+  position: relative;
+  right: 0
+}
+.move-right:hover {
+  right: -10px;
+}
+
+/* ----- Make a payment ----- */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FEFDF9;
+  font-weight: bold;
+  width: 30%;
+  padding: 1em;
+  margin: 1em 0;
+  background-color: #1292B9;
+  transition: all 300ms ease 50ms;
+  border: 2px solid #1292B9;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #FEFDF9;
+  color: #1292B9;
+  cursor: pointer;
+}
+
+/* --- Return to top button formatting --- */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: #1292B9;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 350ms linear;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: #1292B9;
+    opacity: 1;
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/* --- Contact Form Styling --- */
+.contact-form {
+  display: flex;
+  flex-flow: column;
+	width:90%;
+	margin: 1em 0;
+}
+
+.contact-left {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contact-right {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+}
+
+.contact-right h6 {
+  text-align: center;
+  margin-top: 3em;
+}
+
+#contact-form {
+  width: 80%;
+	padding: 2em;
+	margin: 2em 0;
+}
+
+fieldset {
+	margin: .25em;
+	min-width: 80%;
+	padding: 1em;
+	width: 90%;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form textarea {
+	width: 95%;
+  height: 10px;
+	border: 2px solid #D3D3D3;
+  border-radius: 4px;
+	background: #FEFDF9;
+	margin: 0 0 .25em;
+	padding: 1em;
+  font-family: lato;
+}
+
+#contact-form input[type="text"]:hover, #contact-form input[type="email"]:hover, #contact-form input[type="tel"]:hover, #contact-form textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border: 2px solid rgba(18, 146, 185, 0.6);
+}
+
+#contact-form textarea {
+	max-width:100%;
+  height: 7em;
+  resize: vertical;
+  font-family: lato;
+}
+
+#contact-form button[type="submit"] {
+	cursor: pointer;
+	width:50%;
+	border: 2px solid #1292B9;
+  border-radius: 25px;
+	background: #1292B9;
+	color: #FEFDF9;
+	margin:0 0 0.25em;
+	padding: 1em;
+  font-weight: bold;
+}
+
+#contact-form button[type="submit"]:hover {
+	background:#FEFDF9;
+  color: #1292B9;
+	-webkit-transition:background 0.3s ease;
+	-moz-transition:background 0.3s ease;
+	transition:background 0.3s ease;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+	outline: 0;
+	border: 2px solid rgba(18, 146, 185, 0.4);
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+.black {
+  color: #1B2729;
+}
+
+iframe {
+  max-width: 300px;
+}

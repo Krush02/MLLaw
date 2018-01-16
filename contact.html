@@ -2,11 +2,15 @@
   <head>
     <!-- Link stylesheets, fav icon, and fonts -->
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
-    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <!-- Media-dependent style sheet included in HTML -->
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="./resources/css/desktop-style.css" type="text/css"/>
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 899px)" href="./resources/css/tablet-style.css" type="text/css"/>
+    <link rel="stylesheet" media="screen and (max-width: 599px)" href="./resources/css/mobile-style.css" type="text/css"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,800" rel="stylesheet">
     <link rel="shortcut icon" href="./resources/images/fav-icon.png"/>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marsicano + Leyva PLLC</title>
   </head>
   <body>
@@ -14,9 +18,9 @@
     <!-- Header: nav-menu & banner -->
     <header id="home">
       <nav>
-        <ul class="slide-menu">
+        <ul class="mobile-menu slide-menu">
           <li><a class="home bold" href="index.html"><img src="./resources/images/logo.png"></a></li>
-          <li><a class="nav-link bold" href="index.html#practice-areas">Areas of Practice</a></li>
+          <li><a class="nav-link bold" href="index.html#practice-areas">Practice Areas</a></li>
           <li><a class="nav-link bold" href="index.html#meet-team">Meet the Team</a></li>
           <li><a class="nav-link bold" href="#contact">Contact Us</a></li>
           <li><a id="pay" class="nav-link bold" href="#modal-pay">Make A Payment</a></li>
@@ -68,7 +72,7 @@
           </ul>
 
           <!-- google map -->
-          <ul>
+          <ul class="margin-top">
             <li class="bold">Map - Locate Us<div class="seperator"></div></li>
             <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3593.1256545587316!2d-80.19208197525907!3d25.766412840690357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x88d9b682e4bb8677%3A0x66b51a145f81c36f!2smarsican+leyva!3m2!1d25.7664296!2d-80.1898908!5e0!3m2!1sen!2sus!4v1502743183339" width="380" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>

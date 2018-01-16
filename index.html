@@ -2,11 +2,15 @@
   <head>
     <!-- Link stylesheets, fav icon, and fonts -->
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
-    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <!-- Media-dependent style sheet included in HTML -->
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="./resources/css/desktop-style.css" type="text/css"/>
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 899px)" href="./resources/css/tablet-style.css" type="text/css"/>
+    <link rel="stylesheet" media="screen and (max-width: 599px)" href="./resources/css/mobile-style.css" type="text/css"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,800" rel="stylesheet">
     <link rel="shortcut icon" href="./resources/images/fav-icon.png"/>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marsicano + Leyva PLLC</title>
   </head>
   <body>
@@ -14,9 +18,9 @@
     <!-- Header: nav-menu & banner -->
     <header id="home">
       <nav>
-        <ul class="slide-menu">
+        <ul class="mobile-menu slide-menu">
           <li><a class="home bold" href="#home"><img src="./resources/images/logo.png"></a></li>
-          <li><a class="nav-link bold" href="#practice-areas">Areas of Practice</a></li>
+          <li><a class="nav-link bold" href="#practice-areas">Practice Areas</a></li>
           <li><a class="nav-link bold" href="#meet-team">Meet the Team</a></li>
           <li><a class="nav-link bold" href="contact.html">Contact Us</a></li>
           <li><a id="pay" class="nav-link bold" href="#modal-pay">Make A Payment</a></li>
@@ -78,7 +82,7 @@
     <div id="practice-areas" class="container-dark flex-container">
       <div class="areas">
         <div class="center">
-          <h2 class="padding-top flex-heading"><div class="seperator"></div>Areas of Practice<div class="seperator"></div></h2>
+          <h2 class="padding-top flex-heading"><div class="seperator"></div>Practice Areas<div class="seperator"></div></h2>
         </div>
         <ul>
           <li id="family" class="area">
