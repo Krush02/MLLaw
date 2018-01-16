@@ -530,12 +530,6 @@ nav {
 
 .flex-row {
   display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-}
-
-.flex-reverse {
-  display: flex;
   flex-flow: column-reverse;
   justify-content: center;
 }
