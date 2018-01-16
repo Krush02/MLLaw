@@ -41,13 +41,12 @@ h5{
   margin: 0.75em 0;
 }
 h6{
-  font-size: 1.2em;
+  font-size: 1.25em;
   margin: 0.5em 0;
 }
 p, span, ul, li {
   font-size: 1em;
-  letter-spacing: 1.5px;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .flex-heading {
