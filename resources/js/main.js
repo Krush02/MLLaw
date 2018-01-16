@@ -2,15 +2,15 @@
 var main = function() {
 
   // hide dropdown-menu when 'click' on document
-  //$(document).click( function(){
-  //  $('.dropdown-menu').hide();
-  //});
+  $(document).click( function(){
+    $('.mobile-menu').hide();
+  });
 
   // stop hide() from bubbling & open dropdown-menu when bars are clicked
-  //$('.fa-bars').click(function() {
-  //  event.stopPropagation();
-  //  $('.dropdown-menu').slideToggle(200, 'swing');
-  //});
+  $('.fa-bars').click(function() {
+    event.stopPropagation();
+    $('.mobile-menu').slideToggle(250, 'swing');
+  });
 
   //Slow Yo Scroll, Homie
   // Select all links with hashes

@@ -129,6 +129,14 @@ p, span, ul, li {
   align-content: center;
 }
 
+.hide {
+  display: none;
+}
+
+.fa-bars {
+  color: #1B2729;
+}
+
 /* ----- Links ----- */
 a, a:visited {
   color: #FEFDF9;
