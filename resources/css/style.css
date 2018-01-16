@@ -82,6 +82,10 @@ p, span, ul, li {
   margin-right: 1em;
 }
 
+.margin-left {
+  margin-left: 1em;
+}
+
 .highlight {
   color: #FEFDF9;
   background-color: #1292B9;
@@ -105,7 +109,7 @@ p, span, ul, li {
 }
 
 .padding-top {
-  padding-top:2em;
+  padding-top:1em;
 }
 
 .container-light {
@@ -418,9 +422,21 @@ nav {
   height: auto;
   background: #FEFDF9;
   border-radius: 6px;
-  top: 15%;
+  top: 10%;
   left: 25%;
   z-index: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  opacity: 1;
+  padding-bottom: 1em;
+}
+
+.pay-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 60%;
 }
 
 .modal-main h2 {
@@ -579,7 +595,7 @@ input[type=radio]:checked + label::after {
 
 /* --- Professional Memberships & Associations --- */
 .seals {
-  width: 80%;
+  width: 85%;
   margin-bottom: 5em;
 }
 
@@ -593,6 +609,12 @@ input[type=radio]:checked + label::after {
 .seal-list li {
   display: flex;
   align-items: center;
+  transition: all 500ms ease;
+}
+
+.seal-list li:hover {
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
 .seal-list img {
