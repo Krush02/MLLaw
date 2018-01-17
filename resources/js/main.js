@@ -3,7 +3,7 @@ var main = function() {
 
   // hide dropdown-menu when 'click' on document
   $(document).click( function(){
-    $('.mobile-menu').hide();
+    $('.mobile-menu').slideUp(250, 'swing');
   });
 
   // stop hide() from bubbling & open dropdown-menu when bars are clicked
@@ -142,54 +142,6 @@ var main = function() {
   });
 
   //modal click event handlers
-  $('#family').click(function() {
-    $('#modal-family').fadeIn();
-  });
-
-  $('#business').click(function() {
-    $('#modal-business').fadeIn();
-  });
-
-  $('#property').click(function() {
-    $('#modal-property').fadeIn();
-  });
-
-  $('#commercial').click(function() {
-    $('#modal-commercial').fadeIn();
-  });
-
-  $('#civil').click(function() {
-    $('#modal-civil').fadeIn();
-  });
-
-  $('#consumer').click(function() {
-    $('#modal-consumer').fadeIn();
-  });
-
-  $('#estate').click(function() {
-    $('#modal-estate').fadeIn();
-  });
-
-  $('#probate').click(function() {
-    $('#modal-probate').fadeIn();
-  });
-
-  $('#employment').click(function() {
-    $('#modal-employment').fadeIn();
-  });
-
-  $('#debt').click(function() {
-    $('#modal-debt').fadeIn();
-  });
-
-  $('#tenant').click(function() {
-    $('#modal-tenant').fadeIn();
-  });
-
-  $('#coming').click(function() {
-    $('#modal-coming').fadeIn();
-  });
-
   $('#pay').click(function() {
     $('#modal-pay').fadeIn();
   });
@@ -205,7 +157,7 @@ var main = function() {
 
   // ===== Scroll to Top ====
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+    if ($(this).scrollTop() >= 200) {       // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
     } else {
         $('#return-to-top').fadeOut(200);   // Else fade out the arrow
