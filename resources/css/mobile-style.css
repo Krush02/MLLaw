@@ -530,8 +530,18 @@ nav {
 
 .flex-row {
   display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.flex-reverse {
+  display: flex;
   flex-flow: column-reverse;
   justify-content: center;
+}
+
+#column-reverse {
+  flex-flow: column-reverse;
 }
 
 /* Accordion styling */

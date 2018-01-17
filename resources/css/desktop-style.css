@@ -510,6 +510,12 @@ nav {
   justify-content: space-around;
 }
 
+.flex-reverse {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
 /* Accordion styling */
 .tab {
   display: block;
