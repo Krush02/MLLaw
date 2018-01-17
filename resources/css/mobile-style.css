@@ -290,7 +290,10 @@ nav {
 .areas {
   display: flex;
   flex-flow: column;
-  width: 80%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 95%;
   height: auto;
   color: #FEFDF9;
   margin-bottom: 7em;
@@ -298,119 +301,41 @@ nav {
 
 .areas ul {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: space-around;
-}
-
-.areas ul li {
-  margin: 1em 0;
-  border: 2px solid #1292B9;
-  border-radius: 5px;
-}
-
-.area-container {
-  width: 20em;
-  height: 15em;
+  flex-flow: column;
+  align-items: center;
 }
 
 .area {
-  width: 15em;
-  height: 10em;
+  width: 80%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  transition: all 500ms ease 50ms;
+  transition: all 400ms ease 50ms;
+  margin: 1em 0;
+  border: 3px solid #1292B9;
+  border-radius: 5px;
+  color: #FEFDF9;
+  position: relative;
+}
+
+.area img {
+  width: 100%;
+  height: 10em;
+}
+
+.area p {
+  padding: 0.25em .5em;
+  background-color: #1292B9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  opacity: 0.9;
 }
 
 .area:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.area a {
-  border-top: 2px solid #1292B9;
-  border-left: 2px solid #1292B9;
-  border-right: 2px solid #1292B9;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  padding: 0.5em;
-  opacity: 0.9;
-  font-weight: bold;
-  transition: all 250ms ease;
-}
-
-#family {
-  background-image: url("../images/family.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#business {
-  background-image: url("../images/start-up.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-#commercial {
-  background-image: url("../images/handshake.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-#civil {
-  background-image: url("../images/law-books.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-#consumer {
-  background-image: url("../images/gavel.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-#estate {
-  background-image: url("../images/meeting.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-#probate {
-  background-image: url("../images/contract-signing.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-#employment {
-  background-image: url("../images/startup-photos.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-#property {
-  background-image: url("../images/property.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-#debt {
-  background-image: url('../images/debt.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-
-#tenant {
-  background-image: url('../images/coming-soon.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-#coming {
-  background-image: url('../images/coming-soon.jpg');
-  background-size: cover;
-  background-position: center;
+  transform: scale(1.15);
+  color: #FEFDF9;
 }
 
 /* ----- Modals ----- */

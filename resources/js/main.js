@@ -137,9 +137,9 @@ var main = function() {
   };
 
   //areas of practice hover effects
-  $('.area').hover(function() {
-    $(this).find('a').toggleClass('invert');
-  });
+//  $('.area').hover(function() {
+//    $(this).find('a').toggleClass('invert');
+//  });
 
   //modal click event handlers
   $('#pay').click(function() {
