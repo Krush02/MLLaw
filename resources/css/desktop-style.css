@@ -80,6 +80,10 @@ p, span, ul, li {
   margin-left: 1em;
 }
 
+.margin-bottom {
+  margin-bottom: 5em;
+}
+
 .highlight {
   color: #FEFDF9;
   background-color: #1292B9;
@@ -296,7 +300,6 @@ nav {
   flex-flow: column;
   width: 80%;
   height: auto;
-  color: #FEFDF9;
   margin-bottom: 7em;
 }
 
@@ -305,6 +308,10 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-content: space-around;
+}
+
+.areas h2 {
+  color: #FEFDF9;
 }
 
 .area {
@@ -338,6 +345,54 @@ nav {
 .area:hover {
   transform: scale(1.15);
   color: #FEFDF9;
+}
+
+.area-content {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 5em;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.content {
+  width: 75%;
+}
+
+.content p {
+  line-height: 1.75;
+  letter-spacing: 1.1px;
+}
+
+.content ul {
+  display: flex;
+  flex-flow: column;
+  margin: 2em 0;
+  list-style-type: circle;
+}
+
+.content ul li {
+  padding: .5em;
+  margin-left: 1.25em;
+}
+
+.area-nav {
+  width: 20%;
+  display: flex;
+  flex-flow: column;
+  margin-left: 3em;
+}
+
+.area-nav ul {
+  display: flex;
+  flex-flow: column;
+}
+
+.area-nav ul li {
+  padding: .35em;
+}
+
+.area-nav ul a {
+  transition: all 250ms ease;
 }
 
 /* ----- Modals ----- */
@@ -737,7 +792,6 @@ footer {
 }
 
 .contact ul a {
-
   transition: all 250ms ease;
 }
 
@@ -745,13 +799,10 @@ footer {
   text-align: left;
 }
 
-.contact-list
-
 /* ----- Social Icons ----- */
 .social-wrapper {
 	display: flex;
   flex-flow: row;
-  justify-content: space-around;
 }
 
 .fa-facebook, .fa-instagram, .fa-linkedin {
