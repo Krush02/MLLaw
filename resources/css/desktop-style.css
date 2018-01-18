@@ -393,6 +393,11 @@ nav {
 
 .area-nav ul a {
   transition: all 250ms ease;
+  color: #1B2729;
+}
+
+.area-nav ul a:hover {
+  color: #1292B9;
 }
 
 /* ----- Modals ----- */
