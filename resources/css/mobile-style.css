@@ -162,7 +162,7 @@ nav {
 
 .mobile-menu {
   display: none;
-  background-color: #1E5578;
+  background-color: #1292B9;
   position: absolute;
   top: 60px;
   width: 100%;
@@ -249,6 +249,29 @@ nav {
   margin-top: -1.75em;
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(2, 50, 80, 0.7);
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 20em;
+  z-index: -1;
+}
+
+.hero h3 {
+  color: #FEFDF9;
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 98%;
+}
+
 /* ----- About Us content styling ----- */
 .about {
   width: 95%;
@@ -262,7 +285,7 @@ nav {
 .about p{
   padding: 1em 1em;
   font-size: 1.1em;
-  text-align: center;
+  text-align: justify;
 }
 
 .extras {
@@ -336,6 +359,64 @@ nav {
 .area:hover {
   transform: scale(1.15);
   color: #FEFDF9;
+}
+
+.area-content {
+  display: flex;
+  flex-flow: column;
+  margin-top: 1em;
+  margin-bottom: -3em;
+  border-bottom: 1px solid #D3D3D3;
+  color: black;
+}
+
+.content {
+  width: 98%;
+}
+
+.content p {
+  text-align: justify;
+  line-height: 1.75;
+  letter-spacing: 1.1px;
+}
+
+.content ul {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin: 2em 0;
+  list-style-type: circle;
+}
+
+.content ul li {
+  padding: .5em;
+  margin-left: 1.25em;
+}
+
+.area-nav {
+  width: 98%;
+  display: flex;
+  flex-flow: column;
+  margin: 2em 0;
+}
+
+.area-nav ul {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.area-nav ul li {
+  padding: .35em;
+}
+
+.area-nav ul a {
+  transition: all 250ms ease;
+  color: #1B2729;
+}
+
+.area-nav ul a:hover {
+  color: #1292B9;
 }
 
 /* ----- Modals ----- */
@@ -512,6 +593,7 @@ nav {
   -o-transition: max-height 750ms ease 100ms;
   transition: max-height 750ms ease 100ms;
   margin-bottom: 0.5em;
+  text-align: justify;
 }
 
 /* :checked */
@@ -595,7 +677,9 @@ input[type=radio]:checked + label::after {
 
 /* testimonials slider */
 .tsl {
-	padding: 2em 0 0 3em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .tsl-list {
@@ -604,7 +688,7 @@ input[type=radio]:checked + label::after {
 	padding:0;
 	position:relative;
 	overflow:hidden;
-  width: 80%;
+  width: 90%;
 }
 
 .tsl-list .seperator {
@@ -682,6 +766,7 @@ each slide will play 1/5 of animation = 20%
 }
 
 .tsl-content p {
+  text-align: justify;
 	margin-top:0;
   font-size: 1.15em;
   line-height: 1.5;
