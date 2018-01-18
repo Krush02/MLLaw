@@ -162,7 +162,7 @@ nav {
 
 .mobile-menu {
   display: none;
-  background-color: #1292B9;
+  background-color: #1E5578;
   position: absolute;
   top: 60px;
   width: 100%;
@@ -215,7 +215,7 @@ nav {
 
 .nav-link:hover {
 	background-color: #FEFDF9;
-	color: #1292B9;
+	color: #1E5578;
 }
 
 .phone {
@@ -436,7 +436,7 @@ nav {
   align-items: center;
 }
 
-.column {
+.row {
   width: 100%;
   height: auto;
   display: flex;
@@ -446,7 +446,7 @@ nav {
   border-bottom: 1px solid #D3D3D3;
 }
 
-.column img {
+.title img {
   padding: 0.25em;
   border: 2px solid #D3D3D3;
   width: 70%;
@@ -460,7 +460,7 @@ nav {
   justify-content: center;
 }
 
-.flex-reverse {
+.flex-row-reverse {
   display: flex;
   flex-flow: column-reverse;
   justify-content: center;
@@ -709,11 +709,10 @@ each slide will play 1/5 of animation = 20%
   color: #FEFDF9;
 }
 
-.consult a {
+.consult div {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 /* ----- Footer styling ----- */
