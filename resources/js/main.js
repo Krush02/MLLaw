@@ -1,4 +1,4 @@
-// main function >> nav menu toggle, FA hover effects, smooth scroll
+// main function >> nav menu toggle, smooth scroll, auto-type, and more!
 var main = function() {
 
   // hide dropdown-menu when 'click' on document
@@ -85,40 +85,7 @@ var main = function() {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
-
-  // blurb highlight hover effect
-  //$('.blurb').hover(function() {
-  //  $(this).addClass('highlight');
-  //}, function() {
-  //  $(this).removeClass('highlight');
-  //});
-
-  // gavel spin on hover effect
-  //$('#gavel').hover(function() {
-  //  $('#gavel i').addClass("fa-rotate-270");
-  //}, function() {
-  //  $('#gavel i').removeClass("fa-rotate-270");
-  //});
-
-  // hourglass spin on hover effect
-  //$('#hourglass').hover(function() {
-  //  $('#hourglass i').addClass("fa-rotate-270");
-  //}, function() {
-  //  $('#hourglass i').removeClass("fa-rotate-270");
-  //});
-
-  // globe spin on hover effect
-  //$('#globe').hover(function() {
-  //  $('#globe i').addClass("fa-rotate-270");
-  //}, function() {
-  //  $('#globe i').removeClass("fa-rotate-270");
-  //});
-  };
-
-  //areas of practice hover effects
-//  $('.area').hover(function() {
-//    $(this).find('a').toggleClass('invert');
-//  });
+};
 
   //modal click event handlers
   $('#pay').click(function() {
@@ -128,11 +95,6 @@ var main = function() {
   $('.closer').click(function() {
     $('.modal').fadeOut();
   });
-
-  // Social icon animations
-//$('.social').hover(function(){
-//	$(this).toggleClass('social-highlight');
-//});
 
   // ===== Scroll to Top ====
 $(window).scroll(function() {
