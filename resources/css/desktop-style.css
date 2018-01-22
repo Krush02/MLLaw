@@ -215,6 +215,32 @@ nav {
   margin-right: 5%;
 }
 
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1B2729;
+    z-index: 1;
+    padding-top: 0.5em;
+}
+
+.dropdown-content a {
+    color: #FEFDF9;
+    display: block;
+    padding: 0.5em;
+}
+
+.dropdown-content a:hover {
+  background-color: #1292B9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* ----- Banner ----- */
 .banner {
   background-image: url("../images/banner-bg.jpg");
