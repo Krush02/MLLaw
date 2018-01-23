@@ -225,6 +225,10 @@ nav {
   margin-right: 5%;
 }
 
+.dropdown-content {
+  display: none;
+}
+
 /* ----- Banner ----- */
 .banner {
   background-image: url("../images/banner-bg.jpg");
@@ -302,11 +306,6 @@ nav {
   margin-bottom: 1em;
   width: 30%;
   height: auto;
-  transition: color 200ms ease 0ms;
-}
-
-.fa-globe, .fa-gavel, .fa-hourglass {
-  transition: all 650ms ease 50ms;
 }
 
 /* ----- Areas of practice ----- */
